@@ -16,23 +16,28 @@ import { NavBar } from 'components/NavBar.js';
 import { Media } from 'components/Media.js'; 
 import { Card } from 'components/Card'; 
 import { Chapter } from 'components/Chapter'; 
+import { CardsList } from 'components/CardsList'
 
 import lamp from 'assets/lamp.svg'; 
 import gear from 'assets/gear.svg'; 
 import pencil from 'assets/pencil.svg'; 
+import team from 'assets/team.png'
 
 export const LandingPage = () => {
 	const [active, setActive] = useState(false); 
-	const [color, setColor ] = useState(0); // int 
+	const [color, setColor ] = useState('aess');
+
 	const call = () => {
 		setActive(!active); 
 	}
 	/*
 	*/ 
 
-	const changeColor = () => {
-		setColor(color + 1); 
+	const changeColor = (id) => {
+		console.log(id)
+		setColor(id); 
 	}
+
 
 
 	const getCards = () => {
@@ -50,7 +55,7 @@ export const LandingPage = () => {
 				"img": pencil	
 			},
 			]; 
-			values = values.map(e => (<Card name = {e.name} img = { e.img }/>) ); 
+			values = values.map((e, index) => (<Card name = {e.name} key = {index} id = {index}img = { e.img }/>) ); 
 			return values; 
 	}
 
@@ -82,7 +87,7 @@ export const LandingPage = () => {
 
 			{/* Card */}
 
-			<div className = "cards-container d-flex align-items-center align-self-center justify-content-center d-column">
+			<div className = "cards-container d-flex align-items-center align-self-center justify-content-center">
 			{ getCards() }
 			</div>
 		</section>
@@ -136,11 +141,39 @@ export const LandingPage = () => {
 	</div>
 	</section>		
 		{ /* Carousel */}
-	<section className = {`position-relative full transition-short ${color % 2 == 0 ? 'aess-bg-color' : 'aps-bg-color'} `}>
-	<Chapter changeColor = { changeColor }/> 
-
+	<section className = {`position-relative full transition-short ${color}-bg-color `}>
+		<Chapter changeColor = { changeColor }/> 
 	</section>
+
+
+		{ /* Users */ }
+		<section className = "position-relative full-width pt-5" style = {{ height: 'fit-content'}}>
+			<div className = "team-div d-flex flex-column align-items-center mt-5">
+				<img className = "team-icon" src= { team } alt=""/ >
+				<div className = "row mt-3 align-items-center">
+					<div className = "col"><span className = "line-title" /></div>
+					<div className = "col team-title">Nuestro Equipo</div>
+					<div className = "col"><span className = "line-title" /></div>
+				</div>
+
+			
+			</div>
+			<div className = "w-100 position-relative" style = {{ height: 'fit-content'}}>
+				<div className = "arrow-up"> </div>
+				<div className = "card-container-team position-relative">
+					<CardsList /> 
+				</div>
+			</div>
+		</section> 
+
+
+		{ /* Users */ }
+		<section className = "position-relative full">
+			Me llamo andres
+		</section> 
+			<footer className = "footer"></footer> 	
 		</>
+	
 	); 
 }
 

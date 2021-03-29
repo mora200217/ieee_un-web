@@ -1,0 +1,71 @@
+@import "defaults/colors.sass"
+
+.member-card
+
+	transition: .4s ease-out 
+	z-index: 2000
+	cursor: pointer
+	padding: 30px
+
+	padding-top: 0px
+	padding-bottom: 40px
+
+	position: relative !important
+	margin: 40px
+	width: 270px
+	min-height: 230px
+	border-radius: 15px
+	box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.2)
+	text-align: center
+	align-content: center
+	h1 
+		
+		margin: auto
+		margin-top: 20px
+		
+		position: relative
+		right: 0 !important
+		left: 0 !important
+		font-size: 12pt
+		width: 100%
+	
+		
+		line-height: 11pt
+		font-weight: 600
+	h2
+		color: #9A9A9A
+		text-transform: capitalize
+		font-size: 10pt
+		line-height: 10pt
+
+
+	div.img-container
+		margin: auto
+		$dim: 200px
+		height: 120px
+		width: 120px
+		top: -30px
+		display: block
+		border-radius: 100%
+		overflow: hidden
+		border: solid $gray-color 5px
+		position: relative !important
+		img
+		 
+			position: absolute !important
+			line-height: -20px
+			
+			width: 130%
+			top: 0
+			margin: auto
+			right: 20px !important
+			left: -20px !important 
+			bottom: 0px
+			height: 130%
+			
+
+
+
+.member-card:hover
+	transition: .4s ease-out 
+	scale: 1.5

@@ -2,31 +2,38 @@
 	{
 		"name": "AESS", 
 		"nameLong": "Aerospace and Electronics Systems Society",
-		"description": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto"
+		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"colorId": "aess"
 	},
 	{
 		"name": "APS", 
 		"nameLong": "Antennas and Propagation Society",
-		"description": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto"
+		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"colorId": "aps"
 	},
 	{
 		"name": "EMC", 
 		"nameLong": "Electromagnetic Compatibility",
-		"description": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto"
+		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"colorId": "emc"
 	},
-	{
-		"name": "CEIMTUN-RAS", 
+		{
+		"name": "RAS", 
 		"nameLong": "Robotics and Automation Society",
-		"description": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto"
+		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"colorId": "ras"
 	},
-	{
+
+		{
 		"name": "EDS", 
 		"nameLong": "Electronics Devices Society",
-		"description": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto"
+		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"colorId": "eds"
 	},
-	{
-		"name": "Computer", 
+		{
+		"name": "COMPUTER", 
 		"nameLong": "Computer Society",
-		"description": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto"
+		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"colorId": "computer"
 	}
 ]

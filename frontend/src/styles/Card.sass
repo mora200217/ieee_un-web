@@ -2,9 +2,9 @@
 
 
 .card-container
-	display: block
+	display: flex
+	flex-direction: column
 	cursor: pointer
-	background: red
 	min-width: fit-content
 	width: 330px
 	height: 330px
@@ -16,26 +16,28 @@
 	transition: .3s ease-out
 
 	img
-		width: 70%
-
+		width: 50%
+		height: 80%
+		margin: 0
+		top: 0
+		display: block
+		bottom: 0
 		left: 0
 		right: 0
+		margin: auto
 		transition: .3s ease-out
 
 	h2
-		display: none
-		top: 20px
 		text-align: center
 		margin: auto
 		font-weight: 700
 		transition: .3s ease-out
 
 .card-container:hover > h2
-	display: block
 	top: 0px
 	transition: .3s ease-out
 
 .card-container:hover > img
 	width: 60%
-	margin-top: 50px
+	
 	transition: .3s ease-out
