@@ -16,6 +16,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+CHANGE_DB_SQL_INSTANCE = True 
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -38,13 +40,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'landing'
+    'landing', 
+    'rest_framework',
+    'events'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -81,11 +86,28 @@ if os.getenv('GAE_APPLICATION', None):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'ieeeun-web-db',
+            'NAME': 'ieee-un',
             'USER': 'ieeeun',
             'PASSWORD': 'ieeeun',
             'HOST': '/cloudsql/advance-conduit-308320:us-east1:ieeeun-web-db',   #victoria-278101:us-east1:victoria-db',
             'PORT': '5432',
+        }
+    }
+elif CHANGE_DB_SQL_INSTANCE:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'ieee-un',
+            'USER': 'ieeeun',
+            'PASSWORD': 'ieeeun',
+            'HOST': '35.185.96.217',
+            'PORT': '5432',
+            'OPTIONS': {
+            'sslmode': 'verify-ca', #leave this line intact
+            'sslrootcert': './certs/server-ca.pem',
+            "sslcert": "./certs/client-cert.pem",
+            "sslkey": "./certs/client-key.pem",
+        }
         }
     }
 else: 
@@ -129,6 +151,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -138,6 +164,7 @@ STATIC_ROOT = 'static'
 
 
 REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend') 
+
 STATICFILES_DIRS = [
     os.path.join(REACT_APP_DIR, 'build', 'static'),
 ]

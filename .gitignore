@@ -3,6 +3,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,macos,java,react,windows,linux
 
 ### Django ###
+advance-conduit-308320-6e41b0bff99f.json
+
+certs/ 
 *.log
 *.pot
 *.pyc

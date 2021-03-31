@@ -17,6 +17,7 @@ import { Media } from 'components/Media.js';
 import { Card } from 'components/Card'; 
 import { Chapter } from 'components/Chapter'; 
 import { CardsList } from 'components/CardsList'
+import { Form } from 'components/Form'; 
 
 import lamp from 'assets/lamp.svg'; 
 import gear from 'assets/gear.svg'; 
@@ -169,7 +170,7 @@ export const LandingPage = () => {
 
 		{ /* Users */ }
 		<section className = "position-relative full">
-			Me llamo andres
+			<Form /> 
 		</section> 
 			<footer className = "footer"></footer> 	
 		</>
