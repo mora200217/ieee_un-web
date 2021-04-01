@@ -18,6 +18,7 @@ import { Card } from 'components/Card';
 import { Chapter } from 'components/Chapter'; 
 import { CardsList } from 'components/CardsList'
 import { Form } from 'components/Form'; 
+import { Calendar} from 'components/Calendar'; 
 
 import lamp from 'assets/lamp.svg'; 
 import gear from 'assets/gear.svg'; 
@@ -168,12 +169,26 @@ export const LandingPage = () => {
 		</section> 
 
 
+		
+
+		{ /* Calendar */}
+		<section className = "full  position-relative">
+			<Calendar/> 
+		</section>
+
 		{ /* Users */ }
 		<section className = "position-relative full">
 			<Form /> 
 		</section> 
+
+
 			<footer className = "footer"></footer> 	
+
+
+		
 		</>
+
+
 	
 	); 
 }
