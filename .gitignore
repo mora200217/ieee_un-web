@@ -6,6 +6,8 @@
 advance-conduit-308320-6e41b0bff99f.json
 
 certs/ 
+.env 
+
 *.log
 *.pot
 *.pyc

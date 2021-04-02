@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from django.views.generic import TemplateView
 from events import urls
+from members import urls as members_urls
 
 urlpatterns = [
 	path('', TemplateView.as_view(template_name = 'index.html')),
 	path('event', include(urls)),
+    path('member', include(members_urls)),
     path('admin/', admin.site.urls),
 
 ]

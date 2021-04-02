@@ -1,5 +1,21 @@
 @import "defaults/colors.sass"
 
+$xs: 0,
+$sm: 576px,
+$md: 768px,
+$lg: 992px,
+$xl: 1200px,
+$xxl: 1400px
+
+@media (max-width: $lg)
+	.member-card
+		width: 90vw !important
+		h1
+			font-size: 14pt !important
+		h2
+			margin-top: 10px
+			font-size: 11pt !important
+
 .member-card
 
 	transition: .4s ease-out 

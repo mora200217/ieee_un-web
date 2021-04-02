@@ -26,7 +26,7 @@ export const CalendarDay = (props) => {
 	const getEventsIndicator = () => {
 		if(amountOfEvents <= 0)
 			return (<> </> )
-		const indicators = new Array(Math.min(amountOfEvents,3)).fill(0).map(e => (<span className = "circle-indicator"/>))
+		const indicators = new Array(Math.min(amountOfEvents,3)).fill(0).map(e => (<span className = {`circle-indicator ${active ? 'active' : ''}`} />))
 		return (indicators)
 	}
 

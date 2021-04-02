@@ -2,38 +2,38 @@
 	{
 		"name": "AESS", 
 		"nameLong": "Aerospace and Electronics Systems Society",
-		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende a conocer lo que te observa desde lo alto. Ingenia nuevas formas para desarrollar la industria aeroespacial colombiana y cada vez, acercarte más a las estrellas.",
 		"colorId": "aess"
 	},
 	{
 		"name": "APS", 
 		"nameLong": "Antennas and Propagation Society",
-		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"info": "El capítulo de antenas y propagación, siendo el único capitulo estudiantil en el país, se centra en desarrollar proyectos enfocados al diseño, desarrollo e implementación de antenas que captan diversas señales para su posterior procesamiento de datos, en la actualidad, contando con la conexión directa con el capítulo aps profesional tiene grandes oportunidades de avance y desarrollo.",
 		"colorId": "aps"
 	},
 	{
 		"name": "EMC", 
 		"nameLong": "Electromagnetic Compatibility",
-		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"info": "Siendo un capítulo que cuenta con el apoyo del grupo de investigación de compatibilidad electromagnética, es uno de los mas enfocados en la realización de estudios acerca del tema y publicaciones para mostrar los resultados obtenidos en sus trabajos, además de los diversos usos que estos puedan tener.",
 		"colorId": "emc"
 	},
 		{
 		"name": "RAS", 
 		"nameLong": "Robotics and Automation Society",
-		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"info": "Nuestro capitulo RAS es uno de los mas activos y representativos en el país, on el concurso de robótica mas grande en el mismo y el desarrollo de diversos proyectos enfocados en la aplicación de la robótica y automatización, que van desde a construcción de elementos ara uso interno hasta el diseño de iniciáticas para beneficio de diversas áreas aprovechando la interdisciplinariedad existente en nuestra rama.",
 		"colorId": "ras"
 	},
 
 		{
 		"name": "EDS", 
 		"nameLong": "Electronics Devices Society",
-		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"info": "Creamos espacios donde los estudiantes de educación media y universitarios puedan fortalecer sus conocimientos en circuitos y electrónica de una manera entretenida. Buscamos expandir los limites del aprendizaje de esta area del conocimiento con un enfoque competitivo y mostrando lo que hacemos por medio de diversas actividades y proyectos",
 		"colorId": "eds"
 	},
 		{
 		"name": "COMPUTER", 
 		"nameLong": "Computer Society",
-		"info": "La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto. La grandeza del universo, se explora en cada paso de creatividad. Aprende A conocer lo que te observa desde lo alto",
+		"info": "Con sus diversas e innovadoras herramientas busca llevar la programación y en general los temas de informática más allá de los ingenieros y directamente relacionados con esta. Además, con sus cursos y charlas motiva a sus voluntarios a desarrollar conocimiento s y habilidades en temas avanzados y para su posterior aplicación.",
 		"colorId": "computer"
 	}
 ]

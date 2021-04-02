@@ -2,7 +2,7 @@
 {
 	"name": "Camilo Campo",
 	"role": "Presidente",
-	"id": "andres"
+	"id": "camilo"
 },
 {
 	"name": "Valentina Hernandez",
@@ -10,18 +10,21 @@
 	"id": "valentina"
 },
 {
-	"name": "Camila Mejía",
-	"role": "Secretaria General",
-	"id": "camilo"
+	"name": "Diego Aguilar",
+	"role": "Tesorero",
+	"id": "valentina"
 },
 {
-	"name": "Juan Esteban ",
-	"role": "Secretaria General",
-	"id": "esteban"
+	"name": "Iván Alexis",
+	"role": "Secretario General",
+	"id": "ivan"
 },
+
 {
-	"name": "Julian Gonzales",
-	"role": "Secretaria General",
-	"id": "julian"
+	"name": "Mauricio Rodriguez",
+	"role": "Webmaster",
+	"id": "mauricio"
 }
+
+
 ]

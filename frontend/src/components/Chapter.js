@@ -73,7 +73,7 @@ export const  Chapter = ({ changeColor }) => {
 					<Row className = "p-absolute top-title py-3 ml-5 mt-3 justify-content-between">
 						<Col>Capitulos</Col>
 						<Col className = "d-flex flex-column justify-content-center">
-							face
+						
 						</Col>
 					</Row> 
 

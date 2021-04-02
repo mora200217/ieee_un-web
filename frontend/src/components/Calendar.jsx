@@ -4,14 +4,22 @@ import 'styles/Calendar.sass'
 import axios from 'axios'; 
 
 import { CalendarDay } from 'components/CalendarDay.js'; 
-import { getWeekDay, numberToMonth, djangoToDate, numberOfDaysInMonth } from './utils/Date'; 
+
+import { 
+	getWeekDay, 
+	numberToMonth, 
+	djangoToDate, 
+	numberOfDaysInMonth, 
+	formatHour 
+} from './utils/Date'; 
+
 import { countDate } from './utils/array'; 
 
 export const Calendar = () => {
 
 	const [data, setData] = useState(new Array(0)); 
 	const [currentDay, setCurrentDay] = useState(); 
-	const [currentMonth, setCurrentMonth] = useState(2);
+	const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
 	const [initDays, setInitDays] = useState();
 	const [firstLoad, setFirstLoad] = useState();
 	// const [currentDay, setCurrentDay] = useState(); 
@@ -86,8 +94,18 @@ export const Calendar = () => {
 		
 		// Map 
 		const events = filterEventsPerDay().map(event => { 
-			const {name, date} = event; 
-			return(<div> <h1> { name }</h1>{ date } </div>)
+			const {name, hour} = event; 
+			const chapter = event.chapter; 
+			return(	
+				<div className = "event-container my-4 ml-5 d-flex position-relative"> 
+				<div>
+					<h1 className = "event-name"> { name }</h1>
+					<h4 className = "event-chapter"> { chapter.name }</h4>
+					<h4 className = "event-hour"> { formatHour(hour) }</h4>
+				</div>
+					<span className = "line-event-decorator transition-short"></span>
+				</div>
+				)
 		})
 		return ( events)
 	}
@@ -119,9 +137,9 @@ export const Calendar = () => {
 			}, [])
 
 	return (
-		<>
-		<div className = "row w-75 center m-auto h-75 calendar-main-container">
-			<div className = "col-4 info-container d-flex flex-column p-5 ">
+		<div className = "mt-5">
+		<div className = "row w-75 center m-auto mt-5  calendar-main-container">
+			<div className = "col-12 col-lg-4 order-m info-container d-flex flex-column p-5 ">
 				<h1 key = { String(currentDay) + String(currentMonth) }> { currentDay } de { numberToMonth(currentMonth) } </h1>
 				<h5> { getWeekDay(2021, currentMonth, currentDay) } </h5>
 			{/* Eventos del día */}
@@ -129,7 +147,7 @@ export const Calendar = () => {
 					{ getEvents() }
 				</div>
 			</div>
-			<div className = "col-8 d-flex px-5 justify-content-center flex-column align-items-center">
+			<div className = "col-12 col-lg-8 d-flex px-5 justify-content-center flex-column align-items-center">
 
 				<div className = "month-title m-0 mb-2 "> { numberToMonth(currentMonth) } </div>
 
@@ -142,6 +160,6 @@ export const Calendar = () => {
 				<button onClick = { nextMonth }> Siguiente </button>
 			</div>
 			</div>
-		</> 
+		</div> 
 		)
 }

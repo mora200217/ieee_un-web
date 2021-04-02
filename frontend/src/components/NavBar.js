@@ -6,10 +6,8 @@ import menu from 'assets/menu.png';
 export const NavBar = () => {
 	return(
 		<nav className = "main-navbar navbar-expand-md mt-3 ">
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <img className = "logo-small" src={menu} alt=""/>
-          </button>
-
+          
+          
           <a className = "navbar-brand logo-container ml-5"> 
                <img className = "p-2 logo-small" src= {logo} alt=""/> 
             </a>

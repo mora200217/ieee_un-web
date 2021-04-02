@@ -11,13 +11,24 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-CHANGE_DB_SQL_INSTANCE = True 
+CHANGE_DB_SQL_INSTANCE = False 
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.getenv('NOMBRE')
+EMAIL_HOST_PASSWORD = os.getenv('PASSWORD')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -29,8 +40,7 @@ SECRET_KEY = 'pyt2)pn63w!v)@8t8t8y0-4lui12$!n&lpc*=@n3ig1hd*ei=q'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
-
+    
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,7 +52,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'landing', 
     'rest_framework',
-    'events'
+    'events',
+    'members'
 ]
 
 MIDDLEWARE = [

@@ -7,14 +7,15 @@
 	height: 100vh
 	color: white 
 	overflow-x: hidden
+	overflow-y: hidden
 
 .section-2
 	overflow-x: hidden !important
 	width: 100%
 
 .section-3
-	height: 100vh
-	
+	min-height: 100vh
+	height: fit-content
 	display: block
 	position: relative
 
@@ -58,6 +59,7 @@
 	font-size: 64pt
 	line-height: 72pt
 	text-align: left
+	z-index: 200 !important
 
 
 .test 
@@ -86,11 +88,36 @@
 	background: white
 	color: $primary-color
 
+@media (max-width: 900px)
+
+
+	.owl
+		display: none !important
+
+	.title
+		font-size: 62pt !important
+		display: block 
+		line-height: 62pt
+		width: 80vw
+		z-index: 2000000
+
+	.owl-sm
+		display: block !important
+		opacity: 0.4
+	.ver-mas
+		background: white !important
+		color: $primary-color !important
+		display: none !important
+
+.owl-sm
+	display: none
+
 .owl 
 	position: absolute
 	margin: auto
 	height: 100vh
 	bottom: 0px
+	z-index: 2
 	left: 0px
 	top: 0px
 
@@ -108,12 +135,16 @@
 
 .title-landing-container
 	left: -10% !important
+
+
 .quienes-somos-container
-	height:80vh
+	position: relative
+	min-height:80vh
+	height: fit-content
 	width: 55%
 	margin: auto
-	position: absolute
-	top: 290
+	top: 0
+	vertical-align: center
 	bottom: 0
 	left: 0
 	right: 0
@@ -127,7 +158,8 @@
 	
 
 .data-container
-
+	height: fit-content
+	display: block
 	.a
 		font-weight: 900
 		font-size: 32pt
@@ -205,11 +237,22 @@ img.team-icon
 .team-icon
 	width: 110px !important
 
+
+.height-fc
+
+	min-height: 100vh
+	height: fit-content !important
+
 .footer
-	background: linear-gradient($secondary-bg-color,$primary-color)
-	height: 200px
+	background: $secondary-bg-color 
+	height: fit-content
 	bottom: 0
 	left: 0px
 	z-index: 90
 	width: 100%
 
+	color: white
+
+	div
+		
+		font-weight: 600

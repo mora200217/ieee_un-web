@@ -25,3 +25,7 @@ export const numberOfDaysInMonth = (year, month) => {
 	const date = new Date(year, month, 0).getDate(); 
 	return date; 
 }
+
+export const formatHour = (unformatHour) => {
+	return unformatHour.split(':').slice(0,2).join(':'); 
+}

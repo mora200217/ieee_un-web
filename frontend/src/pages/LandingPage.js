@@ -77,11 +77,11 @@ export const LandingPage = () => {
           	</Row>
           	</Col>
 
-          	<Col>
+          	<Col className = "">
           		<img className = "owl" src={Owl} alt=""/>
           	</Col>
           </Row> 
-		
+		<img className = "owl-sm" src={Owl} alt=""/>
 		</section>
 		<section className = "section-2">
 			<div className = "section-extension-1"/>
@@ -94,8 +94,8 @@ export const LandingPage = () => {
 			</div>
 		</section>
 	
-	<section className = "section-3 full">
-	<div className = "quienes-somos-container"> 
+	<section className = "section-3 mt-5  pt-5 full-width d-flex flex-column justify-content-center">
+	<div className = "quienes-somos-container center"> 
 	<br/>
 	<br/>
 	<br/>
@@ -143,7 +143,7 @@ export const LandingPage = () => {
 	</div>
 	</section>		
 		{ /* Carousel */}
-	<section className = {`position-relative full transition-short ${color}-bg-color `}>
+	<section className = {`position-relative full mt-5 transition-short ${color}-bg-color `}>
 		<Chapter changeColor = { changeColor }/> 
 	</section>
 
@@ -172,7 +172,7 @@ export const LandingPage = () => {
 		
 
 		{ /* Calendar */}
-		<section className = "full  position-relative">
+		<section className = "full-width height-fc  position-relative">
 			<Calendar/> 
 		</section>
 
@@ -182,7 +182,11 @@ export const LandingPage = () => {
 		</section> 
 
 
-			<footer className = "footer"></footer> 	
+			<footer className = "footer">
+				<div className = "container d-flex py-3 justify-content-center">
+					Hecho con &lt;3 por el equipo de IEEE UN 
+				</div>
+			</footer> 	
 
 
 		

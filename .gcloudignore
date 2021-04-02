@@ -19,6 +19,7 @@ __pycache__/
 Pipfile
 certs/
 venv/
+.env
 develop_manage.py
 db.sqlite3
 # Ignored by the build system

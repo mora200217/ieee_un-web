@@ -15,7 +15,12 @@ export const CardsList = () => {
 			try{
 				photo = require(`assets/${e.id}.jpg`); 
 			}catch(error){
-				photo = require(`assets/${e.id}.jpeg`); 
+				try{
+					photo = require(`assets/${e.id}.jpeg`); 	
+				}catch(error){
+					photo = require(`assets/${e.id}.png`); 	
+				}
+				
 			}
 		return (<MemberCard name = {e.name} role = {e.role} img = {photo.default} />)
 		})
